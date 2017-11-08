@@ -1,0 +1,55 @@
+.main-img {
+  width: 1000px;
+  position: absolute;
+}
+.element {
+  position: absolute;
+}
+#banner-ad-1 {
+  height: 29px;
+  transform: rotate(5deg);
+  top: 29px;
+  width: 378px;
+}
+#shopping-cart {
+  top: 234px;
+  left: 297px;
+  height: 30px;
+  transform: rotate(5deg);
+}
+#ad-1 {
+  left: 431px;
+  top: 173px;
+  height: 29px;
+}
+#ad-2 {
+  left: 437px;
+  top: 211px;
+  height: 38px;
+}
+#ad-3 {
+  left: 103px;
+  top: 185px;
+  height: 68px;
+  width: 32px;
+}
+#product-1-div {
+  perspective: 229px;
+  perspective-origin: 65%;
+}
+#product-1 {
+  height: 68px;
+  left: 208px;
+  top: 322px;
+  transform: rotateX(122deg);
+}
+#product-2-div {
+  perspective: 229px;
+  perspective-origin: 65%;
+}
+#product-2 {
+  height: 68px;
+  left: 294px;
+  top: 335px;
+  transform: rotateX(122deg);
+}
