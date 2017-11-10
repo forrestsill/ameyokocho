@@ -53,3 +53,23 @@
   top: 335px;
   transform: rotateX(122deg);
 }
+#product-3-div {
+  perspective: 210px;
+  perspective-origin: 58%;
+}
+#product-3 {
+  height: 68px;
+  left: 350px;
+  top: 237px;
+  transform: rotateX(122deg);
+}
+#product-4-div {
+  perspective: 210px;
+  perspective-origin: 58%;
+}
+#product-4 {
+  height: 68px;
+  left: 350px;
+  top: 237px;
+  transform: rotateX(122deg);
+}
