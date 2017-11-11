@@ -15,6 +15,9 @@ body {
   perspective-origin: none !important;
   transform: none !important;
 }
+.clicking {
+  visibility: hidden !important;
+}
 #banner-ad-1 {
   height: 29px;
   transform: rotate(5deg);
@@ -101,6 +104,38 @@ body {
   top: 237px;
   transform: rotateX(122deg);
 }
+#shrimp-div {
+  perspective: 151px;
+  perspective-origin: 56%;
+}
+#shrimp {
+  height: 90px;
+  left: 693px;
+  top: 130px;
+  transform: rotateY(110deg) rotateX(-80deg);
+}
+#desserts-div {
+  perspective: 304px;
+  perspective-origin: 62%;
+}
+#desserts {
+  height: 176px;
+  left: 843px;
+  top: 182px;
+  transform: rotateY(136deg) rotateX(-100deg);
+  width: 96px;
+}
+#bagels-div {
+  perspective: 463px;
+  perspective-origin: 58%;
+}
+#bagels {
+  height: 140px;
+  left: 814px;
+  top: 306px;
+  transform: rotateY(221deg) rotateX(-97deg);
+  width: 117px;
+}
 #vertical-ad-1 {
   height: 222px;
   width: 25px;
@@ -116,4 +151,12 @@ body {
   top: 147px;
   width: 29px;
   transform: rotateX(54deg);
+}
+#source-text {
+  position: absolute;
+  top: 650px;
+}
+#menu-bar {
+  top: 105px;
+  height: 159px;
 }

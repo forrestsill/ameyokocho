@@ -1,12 +1,15 @@
 <html>
   <head>
-    <title>Ameyoko-cho in 1965</title>
+    <title>Ameyoko-cho</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Source: http://www.orionstork.jp/node/164-->
   </head>
   <body>
     <h1>Welcome to Ameyoko-cho!</h1>
+    <h3>Instructions:</h3>
+    <p>Hover to see full image.</p>
+    <p>Click and hold to make image disappear.</p>
     <div class='main-img'>
       <img src='img1.jpg' class='main-img' alt='Ameyoko-cho in 1965'/>
       <img src="banner-ad-1.png" class="element" id="banner-ad-1"/>
@@ -25,17 +28,36 @@
       <div id="product-4-div">
         <img src="product-4.png" class="element" id="product-4"/>
       </div>
+      <div id="shrimp-div">
+        <img src="shrimp.jpg" class="element" id="shrimp"/>
+      </div>
+      <div id="desserts-div">
+        <img src="desserts.jpg" class="element" id="desserts"/>
+      </div>
+      <div id="bagels-div">
+        <img src="bagels.jpg" class="element" id="bagels"/>
+      </div>
       <img src="vertical-ad-1.jpg" class="element" id="vertical-ad-1" />
       <img src="vertical-ad-2.gif" class="element" id="vertical-ad-2" />
       <img src="ad-4.jpg" class="element" id="ad-4"/>
       <img src="banner-ad-2.png" class="element" id="banner-ad-2"/>
       <img src="logo.png" class="element" id="logo"/>
+      <img src="menu-bar.png" class="element" id="menu-bar"/>
     </div>
+    <p id="source-text">
+      Sources: background image from Orion Stoke Co., Ltd. (http://www.orionstork.jp/node/164). All other images from Rakuten, Inc. (https://www.rakuten.co.jp/).
+    </p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
+        $('.element')
+        .mousedown(function() {
+          $(this).addClass('clicking');
+        })
+        .mouseleave(function() {
+          $(this).removeClass('clicking');
+        });
         $('.element').hover(function() {
-          console.log('hover');
           $(this).addClass('hovering');
         }, function() {
           $(this).removeClass('hovering');
