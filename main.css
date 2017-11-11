@@ -1,3 +1,6 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .main-img {
   width: 1000px;
   position: absolute;
@@ -5,11 +8,31 @@
 .element {
   position: absolute;
 }
+.hovering {
+  height: auto !important;
+  width: auto !important;
+  perspective: none !important;
+  perspective-origin: none !important;
+  transform: none !important;
+}
 #banner-ad-1 {
   height: 29px;
   transform: rotate(5deg);
   top: 29px;
   width: 378px;
+}
+#banner-ad-2 {
+  height: 29px;
+  transform: rotate(9deg);
+  top: 24px;
+  left: 198px;
+  width: 333px;
+}
+#logo {
+  height: 28px;
+  transform: rotate(5deg);
+  top: -10px;
+  left: 70px;
 }
 #shopping-cart {
   top: 234px;
@@ -32,6 +55,11 @@
   top: 185px;
   height: 68px;
   width: 32px;
+}
+#ad-4 {
+  left: 10px;
+  top: 73px;
+  height: 29px;
 }
 #product-1-div {
   perspective: 229px;
@@ -64,12 +92,28 @@
   transform: rotateX(122deg);
 }
 #product-4-div {
-  perspective: 210px;
-  perspective-origin: 58%;
+  perspective: 213px;
+  perspective-origin: 63%;
 }
 #product-4 {
-  height: 68px;
-  left: 350px;
+  height: 75px;
+  left: 427px;
   top: 237px;
   transform: rotateX(122deg);
+}
+#vertical-ad-1 {
+  height: 222px;
+  width: 25px;
+  left: 548px;
+}
+#vertical-ad-2-div {
+  perspective: 213px;
+  perspective-origin: 63%;
+}
+#vertical-ad-2 {
+  height: 178px;
+  left: 103px;
+  top: 147px;
+  width: 29px;
+  transform: rotateX(54deg);
 }

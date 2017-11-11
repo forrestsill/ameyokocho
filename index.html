@@ -2,9 +2,11 @@
   <head>
     <title>Ameyoko-cho in 1965</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Source: http://www.orionstork.jp/node/164-->
   </head>
   <body>
+    <h1>Welcome to Ameyoko-cho!</h1>
     <div class='main-img'>
       <img src='img1.jpg' class='main-img' alt='Ameyoko-cho in 1965'/>
       <img src="banner-ad-1.png" class="element" id="banner-ad-1"/>
@@ -23,6 +25,22 @@
       <div id="product-4-div">
         <img src="product-4.png" class="element" id="product-4"/>
       </div>
+      <img src="vertical-ad-1.jpg" class="element" id="vertical-ad-1" />
+      <img src="vertical-ad-2.gif" class="element" id="vertical-ad-2" />
+      <img src="ad-4.jpg" class="element" id="ad-4"/>
+      <img src="banner-ad-2.png" class="element" id="banner-ad-2"/>
+      <img src="logo.png" class="element" id="logo"/>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.element').hover(function() {
+          console.log('hover');
+          $(this).addClass('hovering');
+        }, function() {
+          $(this).removeClass('hovering');
+        });
+      });
+    </script>
   </body>
 </html>
