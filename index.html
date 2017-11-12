@@ -3,13 +3,17 @@
     <title>Ameyoko-cho</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <!-- Source: http://www.orionstork.jp/node/164-->
   </head>
   <body>
     <h1>Welcome to Ameyoko-cho!</h1>
-    <h3>Instructions:</h3>
-    <p>Hover to see full image.</p>
-    <p>Click and hold to make image disappear.</p>
+    <h3>How to buy:</h3>
+    <ol>
+      <li>Hover on an image to see it full-size.</li>
+      <li>Click on an image to see the item's price.</li>
+      <li>Scan the QR code using your smartphone to purchase the item.</li>
+    </ol>
     <div class='main-img'>
       <img src='img1.jpg' class='main-img' alt='Ameyoko-cho in 1965'/>
       <img src="banner-ad-1.png" class="element" id="banner-ad-1"/>
@@ -17,27 +21,48 @@
       <img src="ad-1.png" class="element" id="ad-1"/>
       <img src="ad-2.png" class="element" id="ad-2"/>
       <div id="product-1-div">
-        <img src="product-1.jpg" class="element" id="product-1"/>
+        <a href="#product-1-modal" role="button" data-toggle="modal">
+          <img src="product-1.jpg" class="element product" id="product-1"/>
+        </a>
       </div>
       <div id="product-2-div">
-        <img src="product-2.jpg" class="element" id="product-2"/>
+        <a href="#product-2-modal" role="button" data-toggle="modal">
+          <img src="product-2.jpg" class="element product" id="product-2"/>
+        </a>
       </div>
       <div id="product-3-div">
-        <img src="product-3.jpg" class="element" id="product-3"/>
+        <a href="#product-3-modal" role="button" data-toggle="modal">
+          <img src="product-3.jpg" class="element product" id="product-3"/>
+        </a>
       </div>
       <div id="product-4-div">
-        <img src="product-4.png" class="element" id="product-4"/>
+        <a href="#product-4-modal" role="button" data-toggle="modal">
+          <img src="product-4.png" class="element product" id="product-4"/>
+        </a>
+      </div>
+      <div id="noodles-div">
+        <a href="#noodles-modal" role="button" data-toggle="modal">
+          <img src="noodles.jpg" class="element product" id="noodles"/>
+        </a>
       </div>
       <div id="shrimp-div">
-        <img src="shrimp.jpg" class="element" id="shrimp"/>
+        <a href="#shrimp-modal" role="button" data-toggle="modal">
+          <img src="shrimp.jpg" class="element product" id="shrimp"/>
+        </a>
       </div>
       <div id="desserts-div">
-        <img src="desserts.jpg" class="element" id="desserts"/>
+        <a href="#desserts-modal" role="button" data-toggle="modal">
+          <img src="desserts.jpg" class="element product" id="desserts"/>
+        </a>
       </div>
       <div id="bagels-div">
-        <img src="bagels.jpg" class="element" id="bagels"/>
+        <a href="#bagels-modal" role="button" data-toggle="modal">
+          <img src="bagels.jpg" class="element product" id="bagels"/>
+        </a>
       </div>
-      <img src="vertical-ad-1.jpg" class="element" id="vertical-ad-1" />
+      <a href="#vertical-ad-1-modal" role="button" data-toggle="modal">
+        <img src="vertical-ad-1.jpg" class="element product" id="vertical-ad-1" />
+      </a>
       <img src="vertical-ad-2.gif" class="element" id="vertical-ad-2" />
       <img src="ad-4.jpg" class="element" id="ad-4"/>
       <img src="banner-ad-2.png" class="element" id="banner-ad-2"/>
@@ -47,16 +72,284 @@
     <p id="source-text">
       Sources: background image from Orion Stoke Co., Ltd. (http://www.orionstork.jp/node/164). All other images from Rakuten, Inc. (https://www.rakuten.co.jp/).
     </p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="modal" tabindex="-1" role="dialog" id="product-1-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="product-1.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="product-2-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="product-2.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="product-3-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="product-3.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="product-4-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="product-4.png" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="vertical-ad-1-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="vertical-ad-1.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="bagels-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="bagels.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="desserts-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="desserts.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="noodles-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="noodles.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="shrimp-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Purchase</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btc-logo-div">
+              <img src="btc-logo.svg" />
+            </div>
+            <div class="price-div">
+              <p>0.04 BTC</p>
+            </div>
+            <div class="qr-div">
+              <img class="qr" src="qr.png" />
+            </div>
+            <div class="purchase-img-div">
+              <img class="purchase-img" src="shrimp.jpg" />
+            </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="jquery-3.1.0.js"></script>
+    <script src="bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
-        $('.element')
-        .mousedown(function() {
-          $(this).addClass('clicking');
-        })
-        .mouseleave(function() {
-          $(this).removeClass('clicking');
-        });
+        // $('.element')
+        // .click(function() {
+        //   $(this).addClass('clicking');
+        // });
         $('.element').hover(function() {
           $(this).addClass('hovering');
         }, function() {

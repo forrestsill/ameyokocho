@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  padding: 5px;
 }
 .main-img {
   width: 1000px;
@@ -104,6 +105,17 @@ body {
   top: 237px;
   transform: rotateX(122deg);
 }
+#noodles-div {
+  perspective: 213px;
+  perspective-origin: 74%;
+}
+#noodles {
+  height: 71px;
+  left: 536px;
+  top: 210px;
+  transform: rotateX(114deg);
+  width: 78px;
+}
 #shrimp-div {
   perspective: 151px;
   perspective-origin: 56%;
@@ -159,4 +171,19 @@ body {
 #menu-bar {
   top: 105px;
   height: 159px;
+}
+.btc-logo-div, .price-div, .qr-div, .purchase-img-div {
+  text-align: center;
+}
+.price-div {
+  font-weight: bold;
+}
+.qr {
+  height: 100px;
+}
+.purchase-img {
+  height: 150px;
+}
+.modal-title {
+  float: left;
 }
