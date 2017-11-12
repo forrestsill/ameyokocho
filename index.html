@@ -94,7 +94,7 @@
               <img class="qr" src="qr.png" />
             </div>
             <div class="purchase-img-div">
-              <img class="purchase-img" src="product-1.jpg" />
+              <img class="purchase-img" src="product-1.jpg" id="product-1-modal-img" />
             </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -123,7 +123,7 @@
               <img class="qr" src="qr.png" />
             </div>
             <div class="purchase-img-div">
-              <img class="purchase-img" src="product-2.jpg" />
+              <img class="purchase-img" src="product-2.jpg" id="product-2-modal-img" />
             </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -152,7 +152,7 @@
               <img class="qr" src="qr.png" />
             </div>
             <div class="purchase-img-div">
-              <img class="purchase-img" src="product-3.jpg" />
+              <img class="purchase-img" src="product-3.jpg" id="product-3-modal-img" />
             </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -181,7 +181,7 @@
               <img class="qr" src="qr.png" />
             </div>
             <div class="purchase-img-div">
-              <img class="purchase-img" src="product-4.png" />
+              <img class="purchase-img" src="product-4.png" id="product-4-modal-img" />
             </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -344,7 +344,29 @@
         }, function() {
           $(this).removeClass('hovering');
         });
+        let products = [
+          "product-1.jpg",
+          "product-2.jpg",
+          "product-3.jpg",
+          "product-4.png"
+        ]
+        shuffle(products);
+        $("#product-1").attr("src", products[0]);
+        $("#product-2").attr("src", products[1]);
+        $("#product-3").attr("src", products[2]);
+        $("#product-4").attr("src", products[3]);
+        $("#product-1-modal-img").attr("src", products[0]);
+        $("#product-2-modal-img").attr("src", products[1]);
+        $("#product-3-modal-img").attr("src", products[2]);
+        $("#product-4-modal-img").attr("src", products[3]);
       });
+      // Credit to https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
     </script>
   </body>
 </html>
