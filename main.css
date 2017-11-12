@@ -166,7 +166,8 @@ body {
 }
 #source-text {
   position: absolute;
-  top: 650px;
+  top: 750px;
+  font-size: 12px;
 }
 #menu-bar {
   top: 105px;
@@ -186,4 +187,8 @@ body {
 }
 .modal-title {
   float: left;
+}
+.product {
+  border: 2px solid gold;
+  border-radius: 2px;
 }
